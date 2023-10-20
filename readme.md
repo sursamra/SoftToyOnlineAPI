@@ -33,7 +33,7 @@ This API  allows developers to browse, add, update, and remove toy products from
 2. Switch to Production_API directory and Clone this repository.
 3. Create a venv using `python -m venv softtoy`
 4. Activate softtoy env using `softtoy\scripts\activate`
-5. Install the required dependencies by running `pip install -r requirements.txt`
+5. Install the required dependencies by running `pip install -r SoftToyOnlineAPI\requirements.txt`
 6. Final directory structure should look like following
 
     - Production_API
@@ -51,6 +51,7 @@ Switch to Production_API directory and run tests using  `SoftToyOnlineAPI\tests\
 ## Run API
 
 Switch to Production_API directory and run tests using  `SoftToyOnlineAPI\run_flask.bat`
+API should be available at http://127.0.0.1:5000
 
 Use Postman to api once in production mode
 
