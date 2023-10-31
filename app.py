@@ -3,8 +3,13 @@ try:
     from SoftToyOnlineAPI.config import ProductionConfig, DevelopmentConfig
     from SoftToyOnlineAPI.repo import create_repository
 except ImportError:
-    from .config import ProductionConfig, DevelopmentConfig
-    from .repo import create_repository
+    try:
+        from .config import ProductionConfig, DevelopmentConfig
+        from .repo import create_repository
+    except ImportError:
+        from config import ProductionConfig, DevelopmentConfig
+        from repo import create_repository
+    
 
 app = Flask(__name__)
 #app.config['ENV'] = 'development'
